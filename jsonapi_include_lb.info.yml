@@ -1,0 +1,14 @@
+name: JSON:API Layout Builder Include
+type: module
+description: Builds on top of JSON:API Extras to include inline blocks.
+package: Web services
+core_version_requirement: ^9 || ^10 || ^11
+dependencies:
+  - drupal:layout_builder
+  - drupal:jsonapi
+  - jsonapi_include:jsonapi_include
+
+# Information added by Drupal.org packaging script on 2023-07-13
+version: '1.0.x-dev'
+project: 'jsonapi_include_lb'
+datestamp: 1689248255

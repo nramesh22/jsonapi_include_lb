@@ -1,0 +1,11 @@
+services:
+  jsonapi_include_lb.parse:
+    class: Drupal\jsonapi_include_lb\JsonapiParseLb
+    decorates: jsonapi_include.parse
+    arguments:
+      - '@jsonapi_include_lb.parse.inner'
+      - '@entity_type.manager'
+      - '@jsonapi.resource_type.repository'
+      - '@jsonapi.entity_resource'
+      - '%jsonapi.base_path%'
+      - '@plugin.manager.core.layout'
